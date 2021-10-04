@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+}
 body {
 	padding: 0;
 	margin: 0;
@@ -199,6 +203,7 @@ p {
 }
 .adjust {
 	position: relative;
+	/*width: 100%;*/
 	min-height: 100vh;
 	padding: 80px 40px 0 40px;
 	background: var(--white);
@@ -267,10 +272,72 @@ p {
 	padding: 15px;
 }
 .services .content .servicesBox img {
-	width: 80px;
-	height: 80px;
+	max-width: 60px;
 }
-/*.services .content .servicesBox p {
-	padding: 0 40px;
+.services .content .servicesBox h2{
+	font-size: 1.1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: var(--black);
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.services .content .servicesBox p {
+	text-align: center;
+}
+.project {
+	display: block;
+}
+.project .content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 40px 0;
+	grid-gap: 20px;
+}
+.project .content .workBox {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+.project .content .workBox .imgBox {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
+	transition: 0.5s ease-in-out;
+}
+.project .content .workBox .imgBox img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.project .content .workBox:hover .imgBox {
+	transform: translateY(0);
+}
+.project .content .workBox .textBox {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	transform: translateY(0);
+	transition: 0.5s ease-in-out;
+}
+.project .content .workBox:hover .textBox {
+	transform: translateY(-100%);
+}
 
-}*/
+.project .content .workBox .textBox h3 {
+	font-size: 1em;
+	color: #fff;
+}

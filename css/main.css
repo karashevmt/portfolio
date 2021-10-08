@@ -256,7 +256,7 @@ p {
 .about .content .imgBox img {
 	max-width: 100%;
 }
-.title2 h2::before {
+/*.title2 h2::before {
 	content: '';
 	position: absolute;
 	transform: translateX(50%);
@@ -264,7 +264,7 @@ p {
 	width: 70px;
 	height: 1px;
 	background: var(--black);
-}
+}*/
 .services .content {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -531,6 +531,7 @@ p {
 	}
 	.banner h3,
 	.banner p {
+		margin-bottom: 15px
 		text-align: center;
 	}
 	.adjust {
@@ -616,6 +617,6 @@ p {
 	    font-size: 12px;
 	}
 	.socialMedia {
-		bottom: 10px;
+		bottom: 50px;
 	}
 }

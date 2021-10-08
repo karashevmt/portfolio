@@ -230,7 +230,7 @@ p {
 	font-size: 1.2em;
 	margin-bottom: 30px;
 }
-.title h2::before {
+/*.title h2::before {
 	content: '';
 	position: absolute;
 	transform: translateX(50%);
@@ -238,7 +238,7 @@ p {
 	width: 50px;
 	height: 1px;
 	background: var(--black);
-}
+}*/
 .about .content {
 	display: flex;
 	justify-content: space-between;
@@ -587,6 +587,9 @@ p {
 	.contact {
 		margin-bottom: 80px
 	}
+	.services .content {
+		margin: 0;
+	}
 	.copyright {
 		padding: 10px 20px;
 	}
@@ -611,5 +614,8 @@ p {
 	    bottom: 10px;
 	    left: 20px;
 	    font-size: 12px;
+	}
+	.socialMedia {
+		bottom: 10px;
 	}
 }

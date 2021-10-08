@@ -487,7 +487,7 @@ p {
 	content: '\f185';
 	font-family: fontAwesome;
 }
-.themeSwitch:after {
+.themeSwitch::after {
 	content: 'Switch to Dark Mode';
 	position: absolute;
 	left: 40px;
@@ -502,6 +502,9 @@ p {
 }
 .dark .navigation {
 	border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+.mobileTheme {
+	display: none;
 }
 @media (max-width: 992px) {
 	.navigation {
@@ -595,7 +598,7 @@ p {
 		padding: 10px 20px;
 	}
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 	.main .topbar {
 		height: 40px;
 	}
@@ -609,12 +612,23 @@ p {
 		top: 40px;
 	}
 	.themeSwitch {
-	    width: 20px;
+	    display: none;
+	}
+	.mobileTheme {
+		display: flex;
+		z-index: 999999;
+		left: 5px;
+		top: 10px;
+		position: fixed;
+		width: 20px;
 	    height: 20px;
-	    border-radius: 50%;
-	    bottom: 10px;
-	    left: 20px;
 	    font-size: 12px;
+	}
+	.mobileTheme::after {
+		content: '';
+	}
+	.dark .mobileTheme:after {
+		content: '';
 	}
 	.socialMedia {
 		bottom: 50px;

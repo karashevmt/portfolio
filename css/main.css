@@ -520,6 +520,7 @@ p {
 	.navigation.active {
 		width: 300px;
 	}
+	
 	.main.active, .main, .main .topbar {
 		width: 100%;
 		left: 0;
